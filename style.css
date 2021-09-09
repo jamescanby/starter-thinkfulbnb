@@ -177,8 +177,28 @@ footer p {
 
 /* -------  Media Query ------- */
 
-/* ############################ */
-
+/* -------- Mobile First -------*/
+@media all and (max-width: 470px) {
+  p {
+    font-size: 24px;
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  main img {
+    width: 100%;
+  }
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+  .item-double {
+    flex: 2;
+    margin: 10px;
+  }
+}
 /* ------- DESKTOP -------*/
 
 @media all and (min-width: 480px) {

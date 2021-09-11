@@ -178,26 +178,143 @@ footer p {
 /* -------  Media Query ------- */
 
 /* -------- Mobile First -------*/
-@media all and (max-width: 470px) {
-  p {
-    font-size: 24px;
+@media all and (max-width: 600px) {
+  h2 {
+    font-size: 40px;
+    font-weight: bolder;
   }
-  .group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-  }
-  main img {
-    width: 100%;
-  }
-  .item {
-    flex: 1;
-    margin: 10px;
-  }
-  .item-double {
-    flex: 2;
-    margin: 10px;
-  }
+  
+  /* --- HEADER --- */
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  
+    .logo {
+      padding-bottom: 8px;
+    }
+  
+  /* --- NAVIGATION --- */
+  
+    header nav {
+      display: flex;
+    }
+  
+    header nav ul {
+      margin: auto;
+    }
+  
+    header nav ul li {
+      font-size: 22px;
+      flex-direction: column;
+    }
+  
+  /* --- SEARCH FORM --- */
+  
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 2;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+    
+    .form-item {
+      padding: 10px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: -17px;
+      margin-right: auto;
+    }
+    
+    form button {
+      max-width: 100px;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    
+    /* --- GROUPS & ITEMS --- */
+  
+    /* --- ABOUT --- */ 
+    .about-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .about-item-1 {
+      flex-basis: 25%;
+      padding-right: 10px;
+    }
+  
+    .about-item-2 {
+      flex-basis: 50%;
+      padding: 0 0 0 10px;
+    }
+  
+    /* --- IDEAS --- */
+  
+    .ideas-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .ideas-item-1 {
+      flex-basis: 50%;
+    }
+  
+    /* --- HOST --- */
+  
+    .host-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+    }
+  
+    .host-item-1 {
+      flex: 1;
+      padding-right: 10px;
+    }
+  
+    .host-item-1 ul li {
+      font-size: 18px;
+    }
+  
+    .host-item-2 {
+      width: 100%;
+      flex-basis: 50%;
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .about-group img {
+      width: 100%;
+      padding: 8px 0;
+    }
+    
+    .ideas-group img {
+      width: 100%;
+    }
+    
+    .host-group img {
+      width: 100%;
+    }
+
+    .img {
+      flex-direction: column;
+    }
+
 }
 /* ------- DESKTOP -------*/
 

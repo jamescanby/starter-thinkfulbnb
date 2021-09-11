@@ -243,6 +243,7 @@ footer p {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
   
     .about-item-1 {
@@ -265,7 +266,7 @@ footer p {
     }
   
     .ideas-item-1 {
-      flex-basis: 50%;
+      flex-basis: 100%;
     }
   
     /* --- HOST --- */
@@ -313,6 +314,7 @@ footer p {
 
     .img {
       flex-direction: column;
+      width: 100%
     }
 
 }
